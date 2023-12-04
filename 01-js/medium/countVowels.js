@@ -7,6 +7,26 @@
 
 function countVowels(str) {
     // Your code here
+  let count = 0;
+    let myVowelSet = new Set();
+    myVowelSet.add("a");
+    myVowelSet.add("e");
+    myVowelSet.add("i");
+    myVowelSet.add("o");
+    myVowelSet.add("u");
+    myVowelSet.add("A");
+    myVowelSet.add("E");
+    myVowelSet.add("I");
+    myVowelSet.add("O");
+    myVowelSet.add("U");
+    for(let i = 0;i<str.length;i++){
+        if(myVowelSet.has(str[i])){
+            count++;
+            console.log(str[i]);
+        }
+    }
+
+    return count;
 }
 
 module.exports = countVowels;
