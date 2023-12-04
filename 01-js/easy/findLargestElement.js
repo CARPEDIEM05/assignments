@@ -5,8 +5,17 @@
   - Output: 9
 */
 
-function findLargestElement(numbers) {
-    
+function findLargestElement(lst) {
+    //With libarary
+    let maxi = Math.max(...lst);
+    return maxi;
+    //Without libarary
+    // let maxi = Number.MIN_SAFE_INTEGER;
+    // for(let i =0;i<lst.length;i++){
+    //     maxi = Math.max(maxi,lst[i]);
+    // }
+    // console.log(lst.length);
+    // return maxi;
 }
 
 module.exports = findLargestElement;
